@@ -35,6 +35,7 @@ void start()
 	printf("*    0.²»Íæ   *\n");
 	printf("***************\n");
 }
+
 int main()
 {
 	int input = 0;
