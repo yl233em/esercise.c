@@ -2,11 +2,10 @@
 
 #include<stdio.h>
 
-void prime(int num, int j)
+void prime(int num)
 {
+	int j = 0;
 
-	for (num = 100; num < 200; num++)
-	{
 		for (j = 2; j < num; j++)
 		{
 			if (num % j == 0)
@@ -17,17 +16,20 @@ void prime(int num, int j)
 		}
 		if (j == num)
 		{
-			printf("%d\n", num);
+			printf("%dÊÇËØÊý\n",num);
 		}
-	}
-
 }
 
 int main()
 {
 	int num = 0;
 	int j = 0;
-	prime(num, j);
+	int i = 0;
+
+	for (i = 100; i <200; i++)
+	{
+		prime(i);
+	}
 
 	return 0;
 }
