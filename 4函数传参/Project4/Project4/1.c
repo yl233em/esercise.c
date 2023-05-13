@@ -14,14 +14,27 @@
 
 #include<stdio.h>
 
-char reflex()
+char reflex(char* star, char* end)
 {
-	
+	char temp = 0;
+
+	if (star >= end)
+	{
+		return;
+	}
+	temp = *star;
+	*star = *end;
+	*end = temp;
+	reflex(star + 1, end - 1);
+ 
 }
 int main()
 {
 	char crr[] = "abcdef";
-	reflex(crr);
+	int end = 0;
+	end = sizeof(crr) / sizeof(crr[0]) - 2;
 
+	reflex(crr,&crr[end]);
+	printf("%s", crr);
 	return 0;
 }

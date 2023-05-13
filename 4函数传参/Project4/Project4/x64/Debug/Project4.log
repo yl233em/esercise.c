@@ -1,0 +1,4 @@
+﻿  1.c
+C:\Users\lenovo\OneDrive\桌面\vs\exercise-c\4函数传参\Project4\Project4\1.c(23,3): warning C4033: “reflex”必须返回值
+C:\Users\lenovo\OneDrive\桌面\vs\exercise-c\4函数传参\Project4\Project4\1.c(30): warning C4716: “reflex”: 必须返回一个值
+  Project4.vcxproj -> C:\Users\lenovo\OneDrive\桌面\vs\exercise-c\4函数传参\Project4\x64\Debug\Project4.exe
