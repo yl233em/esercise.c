@@ -89,9 +89,10 @@ int play(char bang[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 				}
 				show[x][y] = '0' + count;
 				win++;
+				return win;
 			}
 		}
 
 	} while (win < ROW * COL - BANG);
-	printf("ÓÎÏ·½áÊø£¡ÄãÓ®ÁË£¡");
+
 }

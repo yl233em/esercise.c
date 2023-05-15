@@ -25,7 +25,16 @@ void game()
 	//打印棋盘
 	showboard(bang, ROW, COL);
 	//玩家行动
-	play(bang, show, ROW, COL);
+	while (count < ROW * COL - BANG)
+	{
+		count += play(bang, show, ROW, COL);
+		showboard(show, ROW, COL);
+	}
+	if (count == ROW * COL - BANG)
+	{
+		printf("游戏结束！你赢了！");
+	}
+
 }
 void choice()
 {

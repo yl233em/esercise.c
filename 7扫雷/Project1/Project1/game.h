@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-#define BANG 80
+#define BANG 78
 #define ROW 9
 #define COL 9
 #define ROWS ROW+1
