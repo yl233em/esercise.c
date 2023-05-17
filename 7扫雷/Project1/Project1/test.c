@@ -23,12 +23,20 @@ void game()
 	//雷盘放雷
 	set_bang(bang, ROW, COL);
 	//打印棋盘
-	showboard(bang, ROW, COL);
+	//showboard(bang, ROW, COL);//测试
+	showboard(show, ROW, COL);
 	//玩家行动
 	while (count < ROW * COL - BANG)
 	{
-		count += play(bang, show, ROW, COL);
-		showboard(show, ROW, COL);
+	
+		if (0 != play(bang, show, ROW, COL))
+		{
+			showboard(show, ROW, COL);
+		}
+		else
+		{
+			break;
+		}
 	}
 	if (count == ROW * COL - BANG)
 	{
@@ -65,6 +73,5 @@ int main()
 {
 	srand((unsigned)time(NULL));
 	choice();//玩家选择游戏
-	game();//开始游戏
 	return 0;
 }

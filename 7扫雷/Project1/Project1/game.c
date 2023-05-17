@@ -72,7 +72,8 @@ int play(char bang[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 			if (bang[x][y] == '1')
 			{
 				printf("ƒ„ ‰¡À£°\n");
-				break;
+				showboard(bang, ROW, COL);
+				return 0;
 			}
 			else
 			{
