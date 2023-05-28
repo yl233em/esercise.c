@@ -1,0 +1,3 @@
+﻿  test.c
+C:\Users\lenovo\Desktop\vs\exercise-c\13考试\Project2\Project2\test.c(17): warning C4715: “fmul”: 不是所有的控件路径都返回值
+  Project2.vcxproj -> C:\Users\lenovo\Desktop\vs\exercise-c\13考试\Project2\x64\Debug\Project2.exe
